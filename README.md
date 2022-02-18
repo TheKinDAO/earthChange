@@ -1,23 +1,12 @@
 # earthChange
-A fungible coin limited in issuance by the total_M² of land **being considered for purchase**, and limited in circulation by the total_M² of land **held under these terms**. eC does not represent property ownership and conveys no rights of governance.
+earthChange is a [Fungible Token] (coin) limited in **circulating_supply** by the total M² of land held under these terms, and limited in **total_supply** by the total M² of land on Earth*.
 
-=======
+eC does not represent property ownership, conveys no rights of governance, and suggests no expectation of profit.
 
-This `Smart Contract` is based on the example implementation of NEP-141 at https://github.com/near-examples/FT
-
-This implementation of a [Fungible Token] contract uses [near-contract-standards] and [simulation] tests. This is a contract-only example.
-
-  [Fungible Token]: https://nomicon.io/Standards/FungibleToken/Core.html
-  [near-contract-standards]: https://github.com/near/near-sdk-rs/tree/master/near-contract-standards
-  [simulation]: https://github.com/near/near-sdk-rs/tree/master/near-sdk-sim
+(*)The land on Earth is currently around 150 Trillion M², but that may increase if land is added (whether floating or secured), so it is suggested total_supply be the entire surface area of planet, which is about 510 Quadrillion M².  This makes "CubeCoin" more obvious as we track all space above and below the surface as tunnels and in the oceans and of course the entire universe.
 
 
-Prerequisites
-=============
-
-If you're using Gitpod, you can skip this step.
-1. Make sure Rust is installed per the prerequisites in [`near-sdk-rs`](https://github.com/near/near-sdk-rs#pre-requisites)
-2. Ensure `near-cli` is installed by running `near --version`. If not installed, install with: `npm install -g near-cli`
+This implementation is at ft/src/lib.rs based on the NEP-141 example at https://github.com/near-examples/FT
 
 ## Building
 
