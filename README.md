@@ -1,5 +1,5 @@
 # earthChange
-earthChange is a [Fungible Token] (coin) limited in **circulating_supply** by the total M² of land held under these terms, and limited in **total_supply** by the total M² of land on Earth*.
+earthChange is coin limited in **total_supply** by the M² of land on Earth* and limited in **circulating_supply** by the total M² of land held under the [For Product](https://docs.google.com/document/d/1cRYLXIQnNWfXNU88UvxdlKgdLfOyoXSvl4xyp6xytMU/) model.
 
 eC does not represent property ownership, conveys no rights of governance, and suggests no expectation of profit.
 
