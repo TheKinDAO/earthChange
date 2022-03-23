@@ -1,4 +1,4 @@
-earthChange is a [Fungible Token] (coin) limited in **circulating_supply** by the total M² of land held under these terms, and limited in **total_supply** by the total M² of land on Earth(*).
+earthChange is a [Fungible Token] (coin) limited in **total_supply** by the total M² of land on Earth(*) and limited in  **circulating_supply** by the total M² of land held under the terms of the [For Product](https://docs.google.com/document/d/1cRYLXIQnNWfXNU88UvxdlKgdLfOyoXSvl4xyp6xytMU/) development model.
 
 eC does not represent property ownership, conveys no rights of governance, and suggests no expectation of profit.
 
@@ -6,4 +6,4 @@ eC does not represent property ownership, conveys no rights of governance, and s
 
 The smart contract is deployed at https://explorer.testnet.near.org/transactions/CwXMsRmvNGo5xhBqbBWWbMmpMevzVmkQugEVW6wbP5Nh
 
-e12f895a2af40d0175cec0b64b42b26d
+e8cd38ec45f7092b5843be565b0ee910  Ricardian.txt
