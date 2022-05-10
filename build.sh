@@ -40,14 +40,13 @@ cp target/wasm32-unknown-unknown/release/*.wasm ./res/
 near deploy --wasmFile res/fungible_token.wasm --accountId $accountId
 
 ## Initialize
-near call $accountId new_default_meta '{"owner_id": "'$accountId'", "total_supply": "51000000000000000"}' --accountId $accountId
+near call $accountId new_default_meta '{"owner_id": "'$accountId'", "total_supply": "510000000000000"}' --accountId $accountId
 ## on testnet:
 # IF 'Smart contract panicked: The contract has already been initialized'
 # THEN gotta do `near delete` and `near create-account` as shown above
 
 ## on mainnet:
 # IF 'Error: The account earthchange.near wouldn't have enough balance to cover storage, required to have 1058106027511515800000000 yoctoNEAR more'
-# THEN gotta send some NEAR to earthchange.near
+# THEN You should transfer some NEAR to earthchange.near
 
 cat ./near.sh
-

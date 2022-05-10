@@ -52,7 +52,7 @@ impl Contract {
     pub fn new_default_meta(owner_id: AccountId, total_supply: U128) -> Self {
         Self::new(
             owner_id, //"earthchange.near".to_string(),
-            total_supply,  // 510_000_000_000_000 + .00: Earth area: 510 Trillion M² + 2 decimals
+            total_supply,  // 510_000_000_000_000: Earth area: 510 Trillion M²
             FungibleTokenMetadata {
                 spec: FT_METADATA_SPEC.to_string(),
                 name: "earthChange".to_string(),
@@ -61,7 +61,7 @@ impl Contract {
                 reference: None, //Some(REFERENCE.to_string()),
                 reference_hash: None, //REFERENCE_HASH.as_bytes(),
                 // reference_hash: Base64VecU8::from(REFERENCE_HASH),
-                decimals: 2,
+                decimals: 0,
             },
         )
     }
