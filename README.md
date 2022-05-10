@@ -1,5 +1,25 @@
 # earthChange
-The Ricardian Contract for this fungible token is the For Product model at:
+
+```
+earthChange: A fungible token (coin) with a circulating supply set by the total M² of land held under these terms. This token does not represent property ownership and conveys no rights of governance.
+
+The DAO issues 150 Trillion earthChange, and holds these coins for now.
+The DAO asks for real-estate listings suitable for purchase.
+Users look for land for sale outside of city limits to build Minimum_Viable_Villages.
+Users verify which essential goods and services can be produced at each location.
+For each parcel, the DAO begins the coin_auction_sequence, offering ½ of the earthChange of that parcel.
+  You may buy earthChange with no expectation of profit and no expectation of product.
+  After 24 hours, or until minimum_bid is met for that subset, the DAO offers ½ of the remaining earthChange, and the next ½, and so on, until the full set is sold.
+    minimum_bid of each earthChange is set by (land_price + startup_costs) / M².
+    startup_costs include:
+      Fees and Taxes of the host governments.
+      Tools and supplies required for Day1 of occupation.
+      Tools and supplies for shared meals.
+      Temporary structures while first permanent structures are built.
+      Tools and supplies required to fulfill all essential Product Tickets we do not yet produce.
+```
+
+The Ricardian Contract of this Fungible Token is the For Product model at:
 https://docs.google.com/document/d/1cRYLXIQnNWfXNU88UvxdlKgdLfOyoXSvl4xyp6xytMU
 
 See `./setup.sh` and `./build.sh`

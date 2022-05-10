@@ -39,16 +39,9 @@ cp target/wasm32-unknown-unknown/release/*.wasm ./res/
 near deploy --wasmFile res/fungible_token.wasm --accountId $accountId
 
 ## Initialize
-near call earthchange.near new_default_meta $accountId 51000000000000000 --accountId $accountId
+near call $accountId new_default_meta '{"owner_id": "'$accountId'", "total_supply": "51000000000000000"}' --accountId $accountId
+# IF 'Smart contract panicked: The contract has already been initialized'
+# THEN gotta do `near delete` and `near create-account` as shown above
 
-# near call $accountId new '{"owner_id": "'$accountId'", "total_supply": "51000000000000000", "metadata": { "spec": "ft-1.0.0", "name": "earthChange", "symbol": "EARTHCHANGE", "decimals": 2 , "reference": "https://docs.google.com/document/d/1cRYLXIQnNWfXNU88UvxdlKgdLfOyoXSvl4xyp6xytMU", "icon": "data:image/svg+xml, %3Csvg xmlns=\"http://www.w3.org/2000/svg\" width=\"180\" height=\"180\"%3E %3Cpath stroke=\"#000\" stroke-width=\"140\" stroke-dasharray=\"6,27.5\" d=\"M90,20V160M20,90H160\"/%3E %3C/svg%3E"}}' --accountId $accountId
+cat ./near.sh
 
-near call $accountId new '{"owner_id": "'$accountId'", "total_supply": "51000000000000000", "metadata": { "spec": "ft-1.0.0", "name": "earthChange", "symbol": "EARTHCHANGE", "decimals": 2 , "reference": "https://docs.google.com/document/d/1cRYLXIQnNWfXNU88UvxdlKgdLfOyoXSvl4xyp6xytMU", "icon": "data:image/svg+xml, %3Csvg xmlns=\"http://www.w3.org/2000/svg\" width=\"180\" height=\"180\"%3E %3Cpath stroke=\"#000\" stroke-width=\"140\" stroke-dasharray=\"6,27.5\" d=\"M90,20V160M20,90H160\"/%3E %3C/svg%3E"}}' --accountId $accountId}
-
-
-## At this point the contract should be depolyed and initialized
-echo ...
-near view $accountId ft_balance_of '{"account_id": "'$accountId'"}'
-echo ...
-# near view $accountId ft_metadata
-echo ...

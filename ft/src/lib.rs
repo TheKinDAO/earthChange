@@ -22,8 +22,13 @@ use near_contract_standards::fungible_token::metadata::{
 use near_contract_standards::fungible_token::FungibleToken;
 use near_sdk::borsh::{self, BorshDeserialize, BorshSerialize};
 use near_sdk::collections::LazyOption;
-use near_sdk::json_types::{Base64VecU8, U128};
+// use near_sdk::json_types::{Base64VecU8, U128};
+use near_sdk::json_types::U128;
 use near_sdk::{env, log, near_bindgen, AccountId, Balance, PanicOnDefault, PromiseOrValue};
+// extern crate sha2;
+// extern crate base64;
+// use sha2::Sha256;
+// use base64::decode;
 
 #[near_bindgen]
 #[derive(BorshDeserialize, BorshSerialize, PanicOnDefault)]
@@ -35,8 +40,9 @@ pub struct Contract {
 const ICON: &str = "data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E %3Cpath stroke='%23000' stroke-width='140' stroke-dasharray='6,27.5' d='M90,20V160M20,90H160'/%3E %3C/svg%3E";
 
 //const RICARDIAN: &str = "https://docs.google.com/document/d/1cRYLXIQnNWfXNU88UvxdlKgdLfOyoXSvl4xyp6xytMU";
-const REFERENCE: &str = "https://raw.githubusercontent.com/TheKinDAO/earthChange/main/reference.json";
-const REFERENCE_HASH: &str = "MWY4YzkxNWU4YzVhNmQxMjRkMDgxMzFkMWE1MWM4NzI0N2E3MTRjOTIyYzUxOGRiOTNiMjA4ZTVlYWI2YjdhZCAgcmVmZXJlbmNlLmpzb24K";
+// const REFERENCE: &str = "https://raw.githubusercontent.com/TheKinDAO/earthChange/main/reference.json";
+// // const REF_VEC: &fs::read("../../reference.json");
+// const REFERENCE_HASH: &str = "1f8c915e8c5a6d124d08131d1a51c87247a714c922c518db93b208e5eab6b7ad";
 
 #[near_bindgen]
 impl Contract {
@@ -52,8 +58,9 @@ impl Contract {
                 name: "earthChange".to_string(),
                 symbol: "EARTHCHANGE".to_string(),
                 icon: Some(ICON.to_string()),
-                reference: Some(REFERENCE.to_string()),
-                reference_hash: Some(Base64VecU8::from(REFERENCE_HASH.as_bytes().to_vec())),
+                reference: None, //Some(REFERENCE.to_string()),
+                reference_hash: None, //REFERENCE_HASH.as_bytes(),
+                // reference_hash: Base64VecU8::from(REFERENCE_HASH),
                 decimals: 2,
             },
         )
