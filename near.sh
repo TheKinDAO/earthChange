@@ -24,7 +24,7 @@ export accountId="earthchange.near"
 
 ## TRANSFER
 # Pay storage_deposit, else: "Smart contract panicked: The account $master is not registered"
-near call $accountId storage_deposit '' --accountId "$master" --amount 0.00125
+near call $accountId storage_deposit "" --accountId "$master" --amount 0.00125
 
 # Now transfer
 near call $accountId ft_transfer '{"receiver_id": "'$master'", "amount": "1"}' --accountId $accountId --amount 0.000000000000000000000001

@@ -17,21 +17,20 @@ case "$1" in
         export master="suicunga.near"
         export accountId="earthchange.near"
         echo "Deploying to MAINnet on account $accountId"
-        near login  # TODO: Check if already authenticated
         ;;
     test)
         export NEAR_ENV=""
         export master="agnucius.testnet"
         export accountId="ec.$master"
         echo "Deploying to TESTnet on subaccount $accountId"
-        near login  # TODO: Check if already authenticated
-        near delete $accountId $master
-        near create-account $accountId --masterAccount $master
         ;;
     *)
         echo "'main' or 'test'"
         ;;
 esac
+near delete $accountId $master
+near create-account $accountId --masterAccount $master
+near login  # TODO: Check if already authenticated
 
 cargo build --all --target wasm32-unknown-unknown --release
 cp target/wasm32-unknown-unknown/release/*.wasm ./res/
