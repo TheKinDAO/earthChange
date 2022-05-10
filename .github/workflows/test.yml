@@ -12,7 +12,7 @@ jobs:
       - name: Install Rust
         uses: actions-rs/toolchain@v1
         with:
-          toolchain: stable-2020-10-08
+          toolchain: stable
           target: wasm32-unknown-unknown
 
       - name: Add wasm32 target
