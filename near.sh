@@ -21,4 +21,4 @@ near view $accountId ft_metadata
 near call $accountId storage_deposit '' --accountId "$master" --amount 0.00125
 
 # Now transfer
-near call $accountId ft_transfer '{"receiver_id": "'$master'", "amount": "1"}' --accountId $accountId --amount 0.000000000000000000000001
+near call $accountId ft_transfer '{"receiver_id": "'$master'", "amount": "100"}' --accountId $accountId --amount 0.000000000000000000000001
