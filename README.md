@@ -1,9 +1,9 @@
 # earthChange
 
-```
 earthChange: A fungible token (coin) with a circulating supply set by the total M² of land held under these terms. This token does not represent property ownership and conveys no rights of governance.
 
-The DAO issues 150 Trillion earthChange, and holds these coins for now.
+```
+The DAO issues 510 Trillion earthChange, and holds these coins for now.
 The DAO asks for real-estate listings suitable for purchase.
 Users look for land for sale outside of city limits to build Minimum_Viable_Villages.
 Users verify which essential goods and services can be produced at each location.
