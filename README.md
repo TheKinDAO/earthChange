@@ -1,9 +1,10 @@
 # earthChange
 
-earthChange: A fungible token (coin) with a circulating supply set by the total M² of land held under these terms. This token does not represent property ownership and conveys no rights of governance.
+**earthChange**: A fungible coin limited in circulation by the M² of land held under the terms of the [For Product](https://docs.google.com/document/d/1cRYLXIQnNWfXNU88UvxdlKgdLfOyoXSvl4xyp6xytMU) model.
+This token does not represent property ownership and conveys no rights of governance.
 
 ```
-The DAO issues 510 Trillion earthChange, and holds these coins for now.
+The DAO issues 510 Trillion (surface area of Earth) earthChange, and holds these coins for now.
 The DAO asks for real-estate listings suitable for purchase.
 Users look for land for sale outside of city limits to build Minimum_Viable_Villages.
 Users verify which essential goods and services can be produced at each location.
@@ -18,14 +19,11 @@ For each parcel, the DAO begins the coin_auction_sequence, offering ½ of the ea
       Temporary structures while first permanent structures are built.
       Tools and supplies required to fulfill all essential Product Tickets we do not yet produce.
 ```
-
-The Ricardian Contract of this Fungible Token is the For Product model at:
-https://docs.google.com/document/d/1cRYLXIQnNWfXNU88UvxdlKgdLfOyoXSvl4xyp6xytMU
-
 See `./setup.sh` and `./build.sh`
 
-This [implementation](ft/src/lib.rs) is based on https://github.com/near-examples/FT
-This contract supersedes https://explorer.near.org/accounts/earthchange.tkn.near
+This implementation is based on https://github.com/near-examples/FT
+
+
 ----
 Original README follows:
 
