@@ -19,6 +19,8 @@ For each parcel, the DAO begins the coin_auction_sequence, offering ½ of the ea
       Temporary structures while first permanent structures are built.
       Tools and supplies required to fulfill all essential Product Tickets we do not yet produce.
 ```
+Contract is on Mainnet at https://explorer.mainnet.near.org/accounts/earthchange.near
+
 See `./setup.sh` and `./build.sh`
 
 This implementation is based on https://github.com/near-examples/FT
